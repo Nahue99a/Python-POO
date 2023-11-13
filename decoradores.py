@@ -5,9 +5,8 @@ def decorador (funcion):
         print ("Despues de llamar a la funcion")
     return funcion_modificada
 
+@decorador
 def saludo():
     print ("Hola Mundo")
     
-saludo_modificado = decorador (saludo)
-
-saludo_modificado()
+saludo()
